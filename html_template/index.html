@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="flex items-center justify-start w-full">
+      <!-- Left Panel -->
+      <div class="w-1/4 h-screen flex flex-col border-x border-gray-200">
+        <!-- Left Header -->
+
+        <div class="flex items-center justify-between p-3 h-auto bg-gray-200">
+          <img
+            class="w-10 h-10 rounded-full ring-2 ring-blue-500 ring-offset-1 hover:ring-blue-700"
+            src="assets/img/avatar.jpg"
+            alt="avatar"
+          />
+          <div class="flex items-center space-x-5 text-black">
+            <a href="#"> <i class="fa-solid fa-comment-dots"></i> </a>
+            <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i> </a>
+          </div>
+        </div>
+        <!-- End Left Header -->
+
+        <!-- Left Search -->
+        <div class="w-full flex items-center bg-white py-2 px-3 space-x-2">
+          <div
+            class="flex flex-grow rounded-md items-center bg-gray-200 py-2 px-4"
+          >
+            <i class="fa-solid fa-search"></i>
+            <input
+              type="text"
+              class="flex-grow text-gray-700 bg-gray-200 focus:outline-none focus:border-none focus:ring-0 ml-2 h-5"
+            />
+          </div>
+          <div>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <hr />
+        <!-- Left Search -->
+
+        <!-- Left Body -->
+        <div class="grid grid-cols-1 divide-y">
+          <div class="p-2">
+            <i class="fa fa-user-circle"></i>
+            Mr. John Doe
+          </div>
+          <div class="p-2">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            Mr. John Doe
+          </div>
+          <div class="p-2">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            Mr. John Doe
+          </div>
+        </div>
+
+        <!-- End Left Body -->
+      </div>
+      <!-- End Left Panel -->
+
+      <!-- Right Panel -->
+      <div class="w-3/4 h-screen border-b-8 border-indigo-500">
+        <!-- Right Header -->
+        <div class="flex items-center justify-between p-3 h-auto bg-gray-200">
+          <img
+            class="w-10 h-10 rounded-full ring-2 ring-blue-500 ring-offset-1 hover:ring-blue-700"
+            src="assets/img/avatar.jpg"
+            alt="avatar"
+          />
+          <div class="flex items-center space-x-5 text-black">
+            <a href="#"> <i class="fa-solid fa-comment-dots"></i> </a>
+            <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i> </a>
+          </div>
+        </div>
+        <!-- End Right Header -->
+      </div>
+      <!-- End Right Panel -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+{
+  "css.validate": false,
+  "tailwindCSS.emmetCompletions": true,
+  "workbench.colorTheme": "Chester Atom",
+  "window.zoomLevel": 1,
+  "editor.fontWeight": "580",
+  "editor.fontFamily": "Fira Code", //Monoid, Code New Roman, Fira Code //Have to install this font manually
+  "editor.tabSize": 4,
+  "editor.insertSpaces": false,
+  "editor.fontLigatures": true,
+  "editor.detectIndentation": false,
+  "workbench.activityBar.visible": true,
+  "workbench.editor.enablePreview": false,
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "javascript.validate.enable": false, //disable all built-in syntax checking
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic
+          "comment",
+          "string",
+          "invalid",
+          "punctuation", // (), {}, [], $
+          "entity.name.type.class", //class names
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "constant.numeric.css",
+          "keyword", //import, export, return…, if, else, for
+          "keyword.operator", // operator =,+,-...
+          "keyword.operator.js",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "entity.name.tag", //Html tag
+          "meta.tag", //Symfony twig form
+          "support.function",
+          "text source",
+          "support.class",
+          "entity.name.function", // function name
+          "variable", // $this
+          "string source",
+          "string.unquoted",
+          "entity.name.type", // Php namespace
+          "text source",
+          "entity.name.tag",
+          "keyword.operator.expression", // in, void, delete, instanceof
+          "keyword.operator.new", //new
+          "entity.other.attribute-name",
+          "storage.type"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["storage.type.function", "storage.type.function.arrow"],
+        "settings": {
+          "foreground": "#e8ab10f9"
+        }
+      }
+    ]
+  }
+}
